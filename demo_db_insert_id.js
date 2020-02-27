@@ -1,11 +1,5 @@
-var mysql = require('mysql');
+let con = require('./db');
 
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "medicalib",
-    database: "mydbnode"
-});
 // Insérez un enregistrement dans la table "clients" et renvoyez l'ID:
 con.connect(function(err) {
     if (err) throw err;

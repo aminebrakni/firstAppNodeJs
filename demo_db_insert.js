@@ -1,11 +1,4 @@
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "medicalib",
-    database: "mydbnode"
-});
+let con = require('./db');
 
 // Ajouter un champ dans la bdd
 // con.connect(function(err) {
